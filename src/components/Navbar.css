@@ -1,7 +1,7 @@
 .nav__container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 24px; /* Desktop padding */
+    padding: 0 24px 24px; /* Desktop padding */
     display: flex;
     justify-content: space-between;
     background-color: aquamarine;
@@ -25,7 +25,7 @@
     .nav__container {
         flex-direction: column; /* Stack items vertically */
         align-items: center;   /* Center items horizontally */
-        padding: 16px;        /* Add padding for smaller screens */
+        padding:16px 16px 32px;        /* Add padding for smaller screens */
     }
 
     .nav__link {
@@ -36,7 +36,7 @@
 
 @media (max-width: 480px) {
     .nav__container {
-        padding: 12px;         /* Smaller padding for very small screens */
+        padding: 12px 12px 40px;         /* Smaller padding for very small screens */
     }
 
     .nav__link {
