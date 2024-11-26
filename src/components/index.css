@@ -342,7 +342,7 @@ footer{
 
     .nav__container {
         flex-direction: column;
-        padding: 16px 16px;
+        padding: 24px 16px;
         align-items: center;
     }
 
