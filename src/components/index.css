@@ -302,6 +302,8 @@ footer{
     align-items: center;
     justify-content: center;
     padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 60px;
     
   }
@@ -340,7 +342,7 @@ footer{
 
     .nav__container {
         flex-direction: column;
-        padding: 0 16px;
+        padding: 16px 16px;
         align-items: center;
     }
 
