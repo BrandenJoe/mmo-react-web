@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './GameDetails.css';
 
 const GameDetails = () => {
   const { id } = useParams(); // Get the ID from the URL
+  const navigate = useNavigate(); // Hook to navigate between routes
   const [game, setGame] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -41,7 +42,11 @@ const GameDetails = () => {
   const cleanDescription = game.description.replace(/style="[^"]*"/g, '');
 
   return (
+  
     <div className="game-details">
+      <button onClick={() => navigate(-1)} className="back-button">
+        Back
+      </button>
       <h1>{game.title}</h1>
       <img src={game.thumbnail} alt={game.title} />
       {/* Render cleaned description */}
